@@ -8,8 +8,8 @@
 import SwiftUI
 
 struct LandmarkList: View {
-    //called  showFavoritesOnly set to true to see how the list reacts.
-    @State private var showFavoritesOnly = true
+    //called  showFavoritesOnly set to false to see how the list reacts.
+    @State private var showFavoritesOnly = false
 
     
     //checking the showFavoritesOnly property and each landmark
@@ -21,7 +21,12 @@ struct LandmarkList: View {
     var body: some View {
        //identifiable data by passing along with data key path to a property
         NavigationView {
-            List(filteredLandmarks) { landmark in
+            List {
+                //passing a binding to showFavoritesOnly
+                Toggle(isOn: $showFavoritesOnly) {
+                                    Text("Favorites only")
+                                }
+                ForEach(filteredLandmarks) { landmark in
                 //Specifying the Landmark Detail view 
                 NavigationLink{
                     LandmarkDetail(landmark: landmark)
