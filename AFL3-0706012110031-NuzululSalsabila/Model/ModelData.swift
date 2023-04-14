@@ -6,9 +6,14 @@
 //
 
 import Foundation
+import Combine
 
-//array of landmarks that initialize from landmarkData.json
-var landmarks: [Landmark] = load("landmarkData.json")
+//conforms to the ObservableObject protocol from the Combine framework
+final class ModelData: ObservableObject {
+    //array of landmarks that initialize from landmarkData.json
+    @Published var landmarks: [Landmark] = load("landmarkData.json")
+}
+
 
 //load method to fetch JSON data
 func load<T: Decodable>(_ filename: String) -> T {
