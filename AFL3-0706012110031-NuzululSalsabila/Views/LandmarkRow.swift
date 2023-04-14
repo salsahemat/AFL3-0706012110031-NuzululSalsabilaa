@@ -12,9 +12,9 @@ struct LandmarkRow: View {
     var landmark: Landmark
 
     var body: some View {
-        //menampilkan konten secara horizontal
+        //show content in horizontal way
         HStack {
-            // adding image 
+            // adding image
             landmark.image
                 .resizable()
                 .frame(width: 50, height: 50)
@@ -25,9 +25,16 @@ struct LandmarkRow: View {
     }
 }
 
+//defines a preview provider for the LandmarkRow view
 struct LandmarkRow_Previews: PreviewProvider {
     static var previews: some View {
-        // add landmark parameter to LandmarkRow initializer
-        LandmarkRow(landmark:landmarks[0])
+        // Wrap the LandmarkRow into a group
+        Group {
+            // add landmark parameter to LandmarkRow initializer
+            LandmarkRow(landmark:landmarks[0])
+            LandmarkRow(landmark:landmarks[1])
+        }
+        //set a size that approximates a row in a list
+        .previewLayout(.fixed(width: 300, height: 70))
     }
 }
