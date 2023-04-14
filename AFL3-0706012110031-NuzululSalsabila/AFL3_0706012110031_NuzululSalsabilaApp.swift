@@ -9,9 +9,12 @@ import SwiftUI
 
 @main
 struct AFL3_0706012110031_NuzululSalsabilaApp: App {
+    //Update the LandmarksApp to create a model instance
+    @StateObject private var modelData = ModelData()
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environmentObject(modelData)
         }
     }
 }

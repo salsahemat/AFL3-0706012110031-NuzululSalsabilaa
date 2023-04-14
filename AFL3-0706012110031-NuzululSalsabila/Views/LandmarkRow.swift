@@ -32,6 +32,8 @@ struct LandmarkRow: View {
 
 //defines a preview provider for the LandmarkRow view
 struct LandmarkRow_Previews: PreviewProvider {
+    //to work with the ModelData object
+    static var landmarks = ModelData().landmarks
     static var previews: some View {
         // Wrap the LandmarkRow into a group
         Group {
