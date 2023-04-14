@@ -10,8 +10,18 @@ import SwiftUI
 struct LandmarkList: View {
     var body: some View {
        //identifiable data by passing along with data key path to a property
-        List(landmarks) { landmark in
-            LandmarkRow(landmark: landmark) // return a landmark Row from the closure 
+        NavigationView {
+            List(landmarks) { landmark in
+                //Specifying the Landmark Detail view 
+                NavigationLink{
+                    LandmarkDetail()
+                }label: {
+                    // return a landmark Row from the closure
+                    LandmarkRow(landmark: landmark)
+                }
+            }
+            //set the title of the navbar
+            .navigationTitle("Landmarks")
         }
     }
 }

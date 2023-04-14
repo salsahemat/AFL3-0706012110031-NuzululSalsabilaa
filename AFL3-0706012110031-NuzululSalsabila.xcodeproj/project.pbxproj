@@ -12,6 +12,7 @@
 		3A3F0B9A29E8E824005719CD /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A3F0B9929E8E824005719CD /* ModelData.swift */; };
 		3A3F0B9F29E8EBD7005719CD /* LandmarkRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A3F0B9E29E8EBD7005719CD /* LandmarkRow.swift */; };
 		3A3F0BA129E8EF48005719CD /* LandmarkList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A3F0BA029E8EF48005719CD /* LandmarkList.swift */; };
+		3A3F0BA329E8F137005719CD /* LandmarkDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A3F0BA229E8F137005719CD /* LandmarkDetail.swift */; };
 		3A7D5CE129E4F19B0068DE1C /* AFL3_0706012110031_NuzululSalsabilaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A7D5CE029E4F19B0068DE1C /* AFL3_0706012110031_NuzululSalsabilaApp.swift */; };
 		3A7D5CE329E4F19B0068DE1C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A7D5CE229E4F19B0068DE1C /* ContentView.swift */; };
 		3A7D5CE529E4F19D0068DE1C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A7D5CE429E4F19D0068DE1C /* Assets.xcassets */; };
@@ -26,6 +27,7 @@
 		3A3F0B9929E8E824005719CD /* ModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
 		3A3F0B9E29E8EBD7005719CD /* LandmarkRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarkRow.swift; sourceTree = "<group>"; };
 		3A3F0BA029E8EF48005719CD /* LandmarkList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarkList.swift; sourceTree = "<group>"; };
+		3A3F0BA229E8F137005719CD /* LandmarkDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarkDetail.swift; sourceTree = "<group>"; };
 		3A7D5CDD29E4F19B0068DE1C /* AFL3-0706012110031-NuzululSalsabila.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AFL3-0706012110031-NuzululSalsabila.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A7D5CE029E4F19B0068DE1C /* AFL3_0706012110031_NuzululSalsabilaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AFL3_0706012110031_NuzululSalsabilaApp.swift; sourceTree = "<group>"; };
 		3A7D5CE229E4F19B0068DE1C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -54,6 +56,7 @@
 				3A7D5CF029E4F8480068DE1C /* MapView.swift */,
 				3A3F0B9E29E8EBD7005719CD /* LandmarkRow.swift */,
 				3A3F0BA029E8EF48005719CD /* LandmarkList.swift */,
+				3A3F0BA229E8F137005719CD /* LandmarkDetail.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -187,6 +190,7 @@
 				3A7D5CF129E4F8480068DE1C /* MapView.swift in Sources */,
 				3A7D5CE129E4F19B0068DE1C /* AFL3_0706012110031_NuzululSalsabilaApp.swift in Sources */,
 				3A3F0BA129E8EF48005719CD /* LandmarkList.swift in Sources */,
+				3A3F0BA329E8F137005719CD /* LandmarkDetail.swift in Sources */,
 				3A7D5CEF29E4F7530068DE1C /* CircleImage.swift in Sources */,
 				3A3F0B9829E8E69E005719CD /* Landmark.swift in Sources */,
 				3A3F0B9F29E8EBD7005719CD /* LandmarkRow.swift in Sources */,
