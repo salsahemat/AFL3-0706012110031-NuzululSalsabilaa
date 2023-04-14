@@ -9,10 +9,9 @@ import SwiftUI
 
 struct LandmarkList: View {
     var body: some View {
-        //shows the tw landmarks rendered in a list style
-        List{
-            LandmarkRow(landmark: landmarks[0])
-            LandmarkRow(landmark: landmarks[1])
+       //identifiable data by passing along with data key path to a property
+        List(landmarks) { landmark in
+            LandmarkRow(landmark: landmark) // return a landmark Row from the closure 
         }
     }
 }
