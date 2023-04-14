@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3A3F0B9629E8E637005719CD /* landmarkData.json in Resources */ = {isa = PBXBuildFile; fileRef = 3A3F0B9529E8E637005719CD /* landmarkData.json */; };
+		3A3F0B9829E8E69E005719CD /* Landmark.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A3F0B9729E8E69E005719CD /* Landmark.swift */; };
+		3A3F0B9A29E8E824005719CD /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A3F0B9929E8E824005719CD /* ModelData.swift */; };
 		3A7D5CE129E4F19B0068DE1C /* AFL3_0706012110031_NuzululSalsabilaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A7D5CE029E4F19B0068DE1C /* AFL3_0706012110031_NuzululSalsabilaApp.swift */; };
 		3A7D5CE329E4F19B0068DE1C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A7D5CE229E4F19B0068DE1C /* ContentView.swift */; };
 		3A7D5CE529E4F19D0068DE1C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A7D5CE429E4F19D0068DE1C /* Assets.xcassets */; };
@@ -16,6 +19,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3A3F0B9529E8E637005719CD /* landmarkData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = landmarkData.json; sourceTree = "<group>"; };
+		3A3F0B9729E8E69E005719CD /* Landmark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Landmark.swift; sourceTree = "<group>"; };
+		3A3F0B9929E8E824005719CD /* ModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
 		3A7D5CDD29E4F19B0068DE1C /* AFL3-0706012110031-NuzululSalsabila.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AFL3-0706012110031-NuzululSalsabila.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A7D5CE029E4F19B0068DE1C /* AFL3_0706012110031_NuzululSalsabilaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AFL3_0706012110031_NuzululSalsabilaApp.swift; sourceTree = "<group>"; };
 		3A7D5CE229E4F19B0068DE1C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -36,6 +42,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3A3F0B9B29E8EAC7005719CD /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				3A7D5CE229E4F19B0068DE1C /* ContentView.swift */,
+				3A7D5CEE29E4F7530068DE1C /* CircleImage.swift */,
+				3A7D5CF029E4F8480068DE1C /* MapView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		3A3F0B9C29E8EAEB005719CD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3A3F0B9929E8E824005719CD /* ModelData.swift */,
+				3A3F0B9729E8E69E005719CD /* Landmark.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3A3F0B9D29E8EAFE005719CD /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				3A3F0B9529E8E637005719CD /* landmarkData.json */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		3A7D5CD429E4F19B0068DE1C = {
 			isa = PBXGroup;
 			children = (
@@ -56,10 +89,10 @@
 			isa = PBXGroup;
 			children = (
 				3A7D5CE029E4F19B0068DE1C /* AFL3_0706012110031_NuzululSalsabilaApp.swift */,
-				3A7D5CE229E4F19B0068DE1C /* ContentView.swift */,
+				3A3F0B9B29E8EAC7005719CD /* Views */,
+				3A3F0B9C29E8EAEB005719CD /* Model */,
 				3A7D5CE429E4F19D0068DE1C /* Assets.xcassets */,
-				3A7D5CEE29E4F7530068DE1C /* CircleImage.swift */,
-				3A7D5CF029E4F8480068DE1C /* MapView.swift */,
+				3A3F0B9D29E8EAFE005719CD /* Resources */,
 				3A7D5CE629E4F19D0068DE1C /* Preview Content */,
 			);
 			path = "AFL3-0706012110031-NuzululSalsabila";
@@ -133,6 +166,7 @@
 			files = (
 				3A7D5CE829E4F19D0068DE1C /* Preview Assets.xcassets in Resources */,
 				3A7D5CE529E4F19D0068DE1C /* Assets.xcassets in Resources */,
+				3A3F0B9629E8E637005719CD /* landmarkData.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -147,6 +181,8 @@
 				3A7D5CF129E4F8480068DE1C /* MapView.swift in Sources */,
 				3A7D5CE129E4F19B0068DE1C /* AFL3_0706012110031_NuzululSalsabilaApp.swift in Sources */,
 				3A7D5CEF29E4F7530068DE1C /* CircleImage.swift in Sources */,
+				3A3F0B9829E8E69E005719CD /* Landmark.swift in Sources */,
+				3A3F0B9A29E8E824005719CD /* ModelData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
