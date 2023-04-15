@@ -13,6 +13,14 @@ final class ModelData: ObservableObject {
     //array of landmarks that initialize from landmarkData.json
     @Published var landmarks: [Landmark] = load("landmarkData.json")
     var hikes: [Hike] = load("hikeData.json")
+    
+    //organizing landmarks by category
+    var categories: [String: [Landmark]] {
+            Dictionary(
+                grouping: landmarks,
+                by: { $0.category.rawValue }
+            )
+        }
 }
 
 
