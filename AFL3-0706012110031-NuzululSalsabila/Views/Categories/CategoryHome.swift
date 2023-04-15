@@ -11,6 +11,7 @@ import SwiftUI
 struct CategoryHome: View {
     //access an instance of ModelData
     @EnvironmentObject var modelData: ModelData
+    @State private var showingProfile = false
     var body: some View {
         NavigationView {
             //Display the categories that can be identifies each item in the list
@@ -21,7 +22,7 @@ struct CategoryHome: View {
                     .scaledToFill()
                     .frame(height: 200)
                     .clipped()
-                    //set edgeinsets to zero 
+                //set edgeinsets to zero
                     .listRowInsets(EdgeInsets())
                 
                 ForEach(modelData.categories.keys.sorted(), id: \.self) { key in
@@ -29,7 +30,20 @@ struct CategoryHome: View {
                 }
                 .listRowInsets(EdgeInsets())
             }
+            //pick a list style that better suits the content
+            .listStyle(.inset)
             .navigationTitle("Featured")
+            .toolbar {
+                Button {
+                    showingProfile.toggle()
+                } label: {
+                    Label("User Profile", systemImage: "person.crop.circle")
+                }
+            }
+            .sheet(isPresented: $showingProfile) {
+                ProfileHost()
+                    .environmentObject(modelData)
+            }
         }
     }
 }
