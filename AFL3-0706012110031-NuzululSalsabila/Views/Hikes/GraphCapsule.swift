@@ -1,9 +1,9 @@
-/*
-See LICENSE folder for this sample’s licensing information.
-
-Abstract:
-A single line in the graph.
-*/
+//
+//  GraphCapsule.swift
+//  AFL3-0706012110031-NuzululSalsabila
+//
+//  Created by Nuzulul Salsabila on 17/04/23.
+//
 
 import SwiftUI
 

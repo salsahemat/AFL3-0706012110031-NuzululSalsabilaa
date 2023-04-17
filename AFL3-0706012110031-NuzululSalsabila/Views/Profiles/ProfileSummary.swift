@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+
 struct ProfileSummary: View {
     @EnvironmentObject var modelData: ModelData
     var profile: Profile

@@ -1,9 +1,9 @@
-/*
- See LICENSE folder for this sample’s licensing information.
- 
- Abstract:
- A view displaying information about a hike, including an elevation graph.
- */
+//
+//  HikeView.swift
+//  AFL3-0706012110031-NuzululSalsabila
+//
+//  Created by Nuzulul Salsabila on 17/04/23.
+//
 
 import SwiftUI
 
@@ -18,38 +18,36 @@ extension AnyTransition {
 
 struct HikeView: View {
     var hike: Hike
-    @State private var showDetail = true
-    
+    @State private var showDetail = false
+
     var body: some View {
         VStack {
             HStack {
                 HikeGraph(hike: hike, path: \.elevation)
                     .frame(width: 50, height: 30)
-                
+
                 VStack(alignment: .leading) {
                     Text(hike.name)
                         .font(.headline)
                     Text(hike.distanceText)
                 }
-                
+
                 Spacer()
-                
+
                 Button {
                     withAnimation {
                         showDetail.toggle()
                     }
-                    
                 } label: {
                     Label("Graph", systemImage: "chevron.right.circle")
                         .labelStyle(.iconOnly)
                         .imageScale(.large)
                         .rotationEffect(.degrees(showDetail ? 90 : 0))
-                    //making the button larger when the graph is visible
                         .scaleEffect(showDetail ? 1.5 : 1)
                         .padding()
                 }
             }
-            
+
             if showDetail {
                 HikeDetail(hike: hike)
                     .transition(.moveAndFade)

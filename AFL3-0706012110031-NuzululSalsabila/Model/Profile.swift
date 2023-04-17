@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+//define the profile struct
 struct Profile {
     var username: String
     var prefersNotifications = true
@@ -15,6 +16,7 @@ struct Profile {
     
     static let `default` = Profile(username: "g_kumar")
     
+    //representing a season
     enum Season: String, CaseIterable, Identifiable {
         case spring = "🌷"
         case summer = "🌞"

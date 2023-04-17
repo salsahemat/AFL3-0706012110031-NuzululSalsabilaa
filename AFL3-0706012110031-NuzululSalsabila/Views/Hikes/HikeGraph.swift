@@ -1,14 +1,14 @@
-/*
-See LICENSE folder for this sample’s licensing information.
-
-Abstract:
-The elevation, heart rate, and pace of a hike plotted on a graph.
-*/
+//
+//  HikeGraph.swift
+//  AFL3-0706012110031-NuzululSalsabila
+//
+//  Created by Nuzulul Salsabila on 17/04/23.
+//
 
 import SwiftUI
 
 extension Animation {
-    static func ripple(index: Int) -> Animation  {
+    static func ripple(index: Int) -> Animation {
         Animation.spring(dampingFraction: 0.5)
             .speed(2)
             .delay(0.03 * Double(index))

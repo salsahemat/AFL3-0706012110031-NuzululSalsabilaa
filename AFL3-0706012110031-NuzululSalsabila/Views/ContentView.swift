@@ -8,15 +8,15 @@
 import SwiftUI
 
 struct ContentView: View {
-    
+
     @State private var selection: Tab = .featured
-    
+
     //to display featured list
     enum Tab {
         case featured
         case list
     }
-    
+
     var body: some View {
         TabView(selection: $selection) {
             CategoryHome()
@@ -24,7 +24,7 @@ struct ContentView: View {
                     Label("Featured", systemImage: "star")
                 }
                 .tag(Tab.featured)
-            
+
             //display landmarklist
             LandmarkList()
                 .tabItem {
