@@ -16,6 +16,14 @@ struct ProfileHost: View {
     var body: some View {
         VStack(alignment: .leading, spacing: 20) {
             HStack {
+                //add cancel button
+                if editMode?.wrappedValue == .active {
+                    Button("Cancel", role: .cancel) {
+                        draftProfile = modelData.profile
+                        editMode?.animation().wrappedValue = .inactive
+                    }
+                }
+                
                 Spacer()
                 EditButton()
             }
@@ -25,6 +33,13 @@ struct ProfileHost: View {
             } else {
                 //include the profile editor and pass along the profile binding
                 ProfileEditor(profile: $draftProfile)
+                //to populate the editor with the correct profile data and update the persistent profile
+                    .onAppear {
+                        draftProfile = modelData.profile
+                    }
+                    .onDisappear {
+                        modelData.profile = draftProfile
+                    }
             }
         }
         .padding()
