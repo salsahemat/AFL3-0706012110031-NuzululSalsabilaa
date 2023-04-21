@@ -9,9 +9,15 @@ import SwiftUI
 
 struct PageView<Page: View>: View {
     var pages: [Page]
+    //declare a state variable whose value can change during the lifecycle of the view
+    @State private var currentPage = 0
     
     var body: some View {
-        PageViewController(pages: pages)
+        //$currentPage allowing the view controller to update the value of currentPage
+        VStack {
+            PageViewController(pages: pages, currentPage: $currentPage)
+            Text("Current Page: \(currentPage)")
+        }
     }
 }
 

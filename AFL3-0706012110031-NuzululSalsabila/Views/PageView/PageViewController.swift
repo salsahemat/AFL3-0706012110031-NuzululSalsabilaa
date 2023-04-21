@@ -12,6 +12,8 @@ import UIKit
 struct PageViewController<Page: View>: UIViewControllerRepresentable {
     
     var pages: [Page]
+    // declare currentPage as a @Binding variable
+    @Binding var currentPage: Int
     
     // creates a Coordinator object that manages the UIPageViewController
     func makeCoordinator() -> Coordinator {
@@ -25,18 +27,18 @@ struct PageViewController<Page: View>: UIViewControllerRepresentable {
             navigationOrientation: .horizontal)
         //data source of UIPageViewController
         pageViewController.dataSource = context.coordinator
-        
+        pageViewController.delegate = context.coordinator
         return pageViewController
     }
     
     //sets the first view controller in the controllers array as the currently displayed view controller
     func updateUIViewController(_ pageViewController: UIPageViewController, context: Context) {
         pageViewController.setViewControllers(
-            [context.coordinator.controllers[0]], direction: .forward, animated: true)
+            [context.coordinator.controllers[currentPage]], direction: .forward, animated: true)
     }
     
     //providing view controllers to the UIPageViewController object
-    class Coordinator: NSObject, UIPageViewControllerDataSource {
+    class Coordinator: NSObject, UIPageViewControllerDataSource, UIPageViewControllerDelegate {
         var parent: PageViewController
         //initialize an array of controllers
         var controllers = [UIViewController]()
@@ -74,5 +76,17 @@ struct PageViewController<Page: View>: UIViewControllerRepresentable {
             return controllers[index + 1]
         }
         
+        //defines a function that gets called when the UIPageViewController finishes animating to a new page
+        func pageViewController(
+            _ pageViewController: UIPageViewController,
+            didFinishAnimating finished: Bool,
+            previousViewControllers: [UIViewController],
+            transitionCompleted completed: Bool) {
+                if completed,
+                   let visibleViewController = pageViewController.viewControllers?.first,
+                   let index = controllers.firstIndex(of: visibleViewController) {
+                    parent.currentPage = index
+                }
+            }
     }
 }
