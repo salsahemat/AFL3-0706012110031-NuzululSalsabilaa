@@ -14,9 +14,12 @@ struct PageView<Page: View>: View {
     
     var body: some View {
         //$currentPage allowing the view controller to update the value of currentPage
-        VStack {
+        ZStack(alignment: .bottomTrailing) {
             PageViewController(pages: pages, currentPage: $currentPage)
-            Text("Current Page: \(currentPage)")
+            //showing the correct values
+            PageControl(numberOfPages: pages.count, currentPage: $currentPage)
+                .frame(width: CGFloat(pages.count * 18))
+                .padding(.trailing)
         }
     }
 }

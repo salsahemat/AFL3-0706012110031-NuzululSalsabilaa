@@ -16,12 +16,8 @@ struct CategoryHome: View {
         NavigationView {
             //Display the categories that can be identifies each item in the list
             List {
-                //displays one of the featured landmarks with a scaled and cropped preview image
-                modelData.features[0].image
-                    .resizable()
-                    .scaledToFill()
-                    .frame(height: 200)
-                    .clipped()
+                PageView(pages: modelData.features.map { FeatureCard(landmark: $0) })
+                    .aspectRatio(3 / 2, contentMode: .fit)
                 //set edgeinsets to zero
                     .listRowInsets(EdgeInsets())
                 
