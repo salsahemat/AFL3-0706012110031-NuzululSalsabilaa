@@ -21,16 +21,20 @@ struct Landmark: Hashable, Codable, Identifiable {
     
     //to access and modify the category of a specific landmark
     var category: Category
-       enum Category: String, CaseIterable, Codable {
-           case lakes = "Lakes"
-           case rivers = "Rivers"
-           case mountains = "Mountains"
-       }
+    enum Category: String, CaseIterable, Codable {
+        case lakes = "Lakes"
+        case rivers = "Rivers"
+        case mountains = "Mountains"
+    }
     
     //add an imageName property to read the name of the image from the data
     private var imageName: String
     var image: Image {
         Image(imageName)
+    }
+    //returns the feature image
+    var featureImage: Image? {
+        isFeatured ? Image(imageName + "_feature") : nil
     }
     
     //mark as private because only to create a public compute locationCoordinate

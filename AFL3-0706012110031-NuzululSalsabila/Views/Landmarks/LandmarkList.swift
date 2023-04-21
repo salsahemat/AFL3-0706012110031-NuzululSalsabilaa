@@ -22,23 +22,34 @@ struct LandmarkList: View {
         }
     var body: some View {
        //identifiable data by passing along with data key path to a property
-        NavigationView {
-            List {
-                //passing a binding to showFavoritesOnly
-                Toggle(isOn: $showFavoritesOnly) {
-                    Text("Favorites only")
-                }
-                ForEach(filteredLandmarks) { landmark in
-                    //Specifying the Landmark Detail view
-                    NavigationLink{
-                        LandmarkDetail(landmark: landmark)
-                    } label: {
-                        // return a landmark Row from the closure
-                        LandmarkRow(landmark: landmark)
-                    }
+//        NavigationView {
+//            List {
+//                //passing a binding to showFavoritesOnly
+//                Toggle(isOn: $showFavoritesOnly) {
+//                    Text("Favorites only")
+//                }
+//                ForEach(filteredLandmarks) { landmark in
+//                    //Specifying the Landmark Detail view
+//                    NavigationLink{
+//                        LandmarkDetail(landmark: landmark)
+//                    } label: {
+//                        // return a landmark Row from the closure
+//                        LandmarkRow(landmark: landmark)
+//                    }
+//                }
+//            }
+//            //set the title of the navbar
+//            .navigationTitle("Landmarks")
+//        }
+        //navigation link kemana link akan menuju
+        NavigationStack{
+            List(modelData.landmarks) { landmark in
+                NavigationLink{
+                    LandmarkDetail(landmark: landmark)
+                }label:{
+                    LandmarkRow(landmark:landmark)
                 }
             }
-            //set the title of the navbar
             .navigationTitle("Landmarks")
         }
     }
