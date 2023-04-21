@@ -10,6 +10,11 @@
 		3A3579A629F29A0A00510FE6 /* FeatureCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A3579A529F29A0A00510FE6 /* FeatureCard.swift */; };
 		3A3579A829F29AAE00510FE6 /* PageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A3579A729F29AAE00510FE6 /* PageView.swift */; };
 		3A3579AA29F2B20200510FE6 /* PageControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A3579A929F2B20200510FE6 /* PageControl.swift */; };
+		3A3579B229F2BF5E00510FE6 /* WatchAFL3_0706012110031_Nuzulul_SalsabilaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A3579B129F2BF5E00510FE6 /* WatchAFL3_0706012110031_Nuzulul_SalsabilaApp.swift */; };
+		3A3579B429F2BF5E00510FE6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A3579B329F2BF5E00510FE6 /* ContentView.swift */; };
+		3A3579B629F2BF6000510FE6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A3579B529F2BF6000510FE6 /* Assets.xcassets */; };
+		3A3579B929F2BF6000510FE6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A3579B829F2BF6000510FE6 /* Preview Assets.xcassets */; };
+		3A3579BC29F2BF6000510FE6 /* WatchAFL3-0706012110031-Nuzulul Salsabila Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 3A3579AF29F2BF5E00510FE6 /* WatchAFL3-0706012110031-Nuzulul Salsabila Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		3A3F0B9629E8E637005719CD /* landmarkData.json in Resources */ = {isa = PBXBuildFile; fileRef = 3A3F0B9529E8E637005719CD /* landmarkData.json */; };
 		3A3F0B9829E8E69E005719CD /* Landmark.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A3F0B9729E8E69E005719CD /* Landmark.swift */; };
 		3A3F0B9A29E8E824005719CD /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A3F0B9929E8E824005719CD /* ModelData.swift */; };
@@ -45,10 +50,39 @@
 		3AF7601E29EB42E7003CABDC /* ProfileSummary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF7601D29EB42E7003CABDC /* ProfileSummary.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		3A3579BA29F2BF6000510FE6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3A7D5CD529E4F19B0068DE1C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3A3579AE29F2BF5E00510FE6;
+			remoteInfo = "WatchAFL3-0706012110031-Nuzulul Salsabila Watch App";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		3A3579C029F2BF6100510FE6 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				3A3579BC29F2BF6000510FE6 /* WatchAFL3-0706012110031-Nuzulul Salsabila Watch App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		3A3579A529F29A0A00510FE6 /* FeatureCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeatureCard.swift; sourceTree = "<group>"; };
 		3A3579A729F29AAE00510FE6 /* PageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageView.swift; sourceTree = "<group>"; };
 		3A3579A929F2B20200510FE6 /* PageControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageControl.swift; sourceTree = "<group>"; };
+		3A3579AF29F2BF5E00510FE6 /* WatchAFL3-0706012110031-Nuzulul Salsabila Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "WatchAFL3-0706012110031-Nuzulul Salsabila Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3A3579B129F2BF5E00510FE6 /* WatchAFL3_0706012110031_Nuzulul_SalsabilaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchAFL3_0706012110031_Nuzulul_SalsabilaApp.swift; sourceTree = "<group>"; };
+		3A3579B329F2BF5E00510FE6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		3A3579B529F2BF6000510FE6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3A3579B829F2BF6000510FE6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		3A3F0B9529E8E637005719CD /* landmarkData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = landmarkData.json; sourceTree = "<group>"; };
 		3A3F0B9729E8E69E005719CD /* Landmark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Landmark.swift; sourceTree = "<group>"; };
 		3A3F0B9929E8E824005719CD /* ModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
@@ -86,6 +120,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		3A3579AC29F2BF5E00510FE6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		3A7D5CDA29E4F19B0068DE1C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -96,6 +137,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3A3579B029F2BF5E00510FE6 /* WatchAFL3-0706012110031-Nuzulul Salsabila Watch App */ = {
+			isa = PBXGroup;
+			children = (
+				3A3579B129F2BF5E00510FE6 /* WatchAFL3_0706012110031_Nuzulul_SalsabilaApp.swift */,
+				3A3579B329F2BF5E00510FE6 /* ContentView.swift */,
+				3A3579B529F2BF6000510FE6 /* Assets.xcassets */,
+				3A3579B729F2BF6000510FE6 /* Preview Content */,
+			);
+			path = "WatchAFL3-0706012110031-Nuzulul Salsabila Watch App";
+			sourceTree = "<group>";
+		};
+		3A3579B729F2BF6000510FE6 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				3A3579B829F2BF6000510FE6 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
 		3A3F0B9B29E8EAC7005719CD /* Views */ = {
 			isa = PBXGroup;
 			children = (
@@ -188,6 +248,7 @@
 			isa = PBXGroup;
 			children = (
 				3A7D5CDF29E4F19B0068DE1C /* AFL3-0706012110031-NuzululSalsabila */,
+				3A3579B029F2BF5E00510FE6 /* WatchAFL3-0706012110031-Nuzulul Salsabila Watch App */,
 				3A7D5CDE29E4F19B0068DE1C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -196,6 +257,7 @@
 			isa = PBXGroup;
 			children = (
 				3A7D5CDD29E4F19B0068DE1C /* AFL3-0706012110031-NuzululSalsabila.app */,
+				3A3579AF29F2BF5E00510FE6 /* WatchAFL3-0706012110031-Nuzulul Salsabila Watch App.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -246,6 +308,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		3A3579AE29F2BF5E00510FE6 /* WatchAFL3-0706012110031-Nuzulul Salsabila Watch App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3A3579BD29F2BF6100510FE6 /* Build configuration list for PBXNativeTarget "WatchAFL3-0706012110031-Nuzulul Salsabila Watch App" */;
+			buildPhases = (
+				3A3579AB29F2BF5E00510FE6 /* Sources */,
+				3A3579AC29F2BF5E00510FE6 /* Frameworks */,
+				3A3579AD29F2BF5E00510FE6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "WatchAFL3-0706012110031-Nuzulul Salsabila Watch App";
+			productName = "WatchAFL3-0706012110031-Nuzulul Salsabila Watch App";
+			productReference = 3A3579AF29F2BF5E00510FE6 /* WatchAFL3-0706012110031-Nuzulul Salsabila Watch App.app */;
+			productType = "com.apple.product-type.application";
+		};
 		3A7D5CDC29E4F19B0068DE1C /* AFL3-0706012110031-NuzululSalsabila */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3A7D5CEB29E4F19D0068DE1C /* Build configuration list for PBXNativeTarget "AFL3-0706012110031-NuzululSalsabila" */;
@@ -253,10 +332,12 @@
 				3A7D5CD929E4F19B0068DE1C /* Sources */,
 				3A7D5CDA29E4F19B0068DE1C /* Frameworks */,
 				3A7D5CDB29E4F19B0068DE1C /* Resources */,
+				3A3579C029F2BF6100510FE6 /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				3A3579BB29F2BF6000510FE6 /* PBXTargetDependency */,
 			);
 			name = "AFL3-0706012110031-NuzululSalsabila";
 			productName = "AFL3-0706012110031-NuzululSalsabila";
@@ -273,6 +354,9 @@
 				LastSwiftUpdateCheck = 1430;
 				LastUpgradeCheck = 1430;
 				TargetAttributes = {
+					3A3579AE29F2BF5E00510FE6 = {
+						CreatedOnToolsVersion = 14.3;
+					};
 					3A7D5CDC29E4F19B0068DE1C = {
 						CreatedOnToolsVersion = 14.3;
 					};
@@ -292,11 +376,21 @@
 			projectRoot = "";
 			targets = (
 				3A7D5CDC29E4F19B0068DE1C /* AFL3-0706012110031-NuzululSalsabila */,
+				3A3579AE29F2BF5E00510FE6 /* WatchAFL3-0706012110031-Nuzulul Salsabila Watch App */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		3A3579AD29F2BF5E00510FE6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A3579B929F2BF6000510FE6 /* Preview Assets.xcassets in Resources */,
+				3A3579B629F2BF6000510FE6 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		3A7D5CDB29E4F19B0068DE1C /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -311,6 +405,15 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		3A3579AB29F2BF5E00510FE6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A3579B429F2BF5E00510FE6 /* ContentView.swift in Sources */,
+				3A3579B229F2BF5E00510FE6 /* WatchAFL3_0706012110031_Nuzulul_SalsabilaApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		3A7D5CD929E4F19B0068DE1C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -352,7 +455,77 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		3A3579BB29F2BF6000510FE6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3A3579AE29F2BF5E00510FE6 /* WatchAFL3-0706012110031-Nuzulul Salsabila Watch App */;
+			targetProxy = 3A3579BA29F2BF6000510FE6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		3A3579BE29F2BF6100510FE6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"WatchAFL3-0706012110031-Nuzulul Salsabila Watch App/Preview Content\"";
+				DEVELOPMENT_TEAM = 7SU4KK4G7H;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "WatchAFL3-0706012110031-Nuzulul Salsabila";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = "uc.AFL3-0706012110031-NuzululSalsabila";
+				INFOPLIST_KEY_WKRunsIndependentlyOfCompanionApp = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "uc.AFL3-0706012110031-NuzululSalsabila.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 9.4;
+			};
+			name = Debug;
+		};
+		3A3579BF29F2BF6100510FE6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"WatchAFL3-0706012110031-Nuzulul Salsabila Watch App/Preview Content\"";
+				DEVELOPMENT_TEAM = 7SU4KK4G7H;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "WatchAFL3-0706012110031-Nuzulul Salsabila";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = "uc.AFL3-0706012110031-NuzululSalsabila";
+				INFOPLIST_KEY_WKRunsIndependentlyOfCompanionApp = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "uc.AFL3-0706012110031-NuzululSalsabila.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 9.4;
+			};
+			name = Release;
+		};
 		3A7D5CE929E4F19D0068DE1C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -470,6 +643,7 @@
 		3A7D5CEC29E4F19D0068DE1C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -500,6 +674,7 @@
 		3A7D5CED29E4F19D0068DE1C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -530,6 +705,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		3A3579BD29F2BF6100510FE6 /* Build configuration list for PBXNativeTarget "WatchAFL3-0706012110031-Nuzulul Salsabila Watch App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3A3579BE29F2BF6100510FE6 /* Debug */,
+				3A3579BF29F2BF6100510FE6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		3A7D5CD829E4F19B0068DE1C /* Build configuration list for PBXProject "AFL3-0706012110031-NuzululSalsabila" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
