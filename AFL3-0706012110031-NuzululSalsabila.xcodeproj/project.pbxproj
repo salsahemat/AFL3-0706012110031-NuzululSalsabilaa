@@ -10,11 +10,23 @@
 		3A3579A629F29A0A00510FE6 /* FeatureCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A3579A529F29A0A00510FE6 /* FeatureCard.swift */; };
 		3A3579A829F29AAE00510FE6 /* PageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A3579A729F29AAE00510FE6 /* PageView.swift */; };
 		3A3579AA29F2B20200510FE6 /* PageControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A3579A929F2B20200510FE6 /* PageControl.swift */; };
-		3A3579B229F2BF5E00510FE6 /* WatchAFL3_0706012110031_Nuzulul_SalsabilaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A3579B129F2BF5E00510FE6 /* WatchAFL3_0706012110031_Nuzulul_SalsabilaApp.swift */; };
 		3A3579B429F2BF5E00510FE6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A3579B329F2BF5E00510FE6 /* ContentView.swift */; };
 		3A3579B629F2BF6000510FE6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A3579B529F2BF6000510FE6 /* Assets.xcassets */; };
 		3A3579B929F2BF6000510FE6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A3579B829F2BF6000510FE6 /* Preview Assets.xcassets */; };
 		3A3579BC29F2BF6000510FE6 /* WatchAFL3-0706012110031-Nuzulul Salsabila Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 3A3579AF29F2BF5E00510FE6 /* WatchAFL3-0706012110031-Nuzulul Salsabila Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		3A3579C229F2C43400510FE6 /* hikeData.json in Resources */ = {isa = PBXBuildFile; fileRef = 3A3579C129F2C43400510FE6 /* hikeData.json */; };
+		3A3579C329F2C47900510FE6 /* Hike.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A3F0BB929E918CF005719CD /* Hike.swift */; };
+		3A3579C429F2C47900510FE6 /* LandmarkRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A3F0B9E29E8EBD7005719CD /* LandmarkRow.swift */; };
+		3A3579C529F2C47900510FE6 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF7601829EB4276003CABDC /* Profile.swift */; };
+		3A3579C629F2C47900510FE6 /* Landmark.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A3F0B9729E8E69E005719CD /* Landmark.swift */; };
+		3A3579C729F2C47900510FE6 /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A7D5CEE29E4F7530068DE1C /* CircleImage.swift */; };
+		3A3579C829F2C47900510FE6 /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A3F0B9929E8E824005719CD /* ModelData.swift */; };
+		3A3579C929F2C47900510FE6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A7D5CE429E4F19D0068DE1C /* Assets.xcassets */; };
+		3A3579CA29F2C47900510FE6 /* landmarkData.json in Resources */ = {isa = PBXBuildFile; fileRef = 3A3F0B9529E8E637005719CD /* landmarkData.json */; };
+		3A3579CB29F2C47900510FE6 /* hikeData.json in Resources */ = {isa = PBXBuildFile; fileRef = 3A3579C129F2C43400510FE6 /* hikeData.json */; };
+		3A3579CC29F2C47900510FE6 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A7D5CF029E4F8480068DE1C /* MapView.swift */; };
+		3A3579CD29F2C47900510FE6 /* AFL3_0706012110031_NuzululSalsabilaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A7D5CE029E4F19B0068DE1C /* AFL3_0706012110031_NuzululSalsabilaApp.swift */; };
+		3A3579CE29F2C47900510FE6 /* LandmarkList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A3F0BA029E8EF48005719CD /* LandmarkList.swift */; };
 		3A3F0B9629E8E637005719CD /* landmarkData.json in Resources */ = {isa = PBXBuildFile; fileRef = 3A3F0B9529E8E637005719CD /* landmarkData.json */; };
 		3A3F0B9829E8E69E005719CD /* Landmark.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A3F0B9729E8E69E005719CD /* Landmark.swift */; };
 		3A3F0B9A29E8E824005719CD /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A3F0B9929E8E824005719CD /* ModelData.swift */; };
@@ -79,10 +91,10 @@
 		3A3579A729F29AAE00510FE6 /* PageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageView.swift; sourceTree = "<group>"; };
 		3A3579A929F2B20200510FE6 /* PageControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageControl.swift; sourceTree = "<group>"; };
 		3A3579AF29F2BF5E00510FE6 /* WatchAFL3-0706012110031-Nuzulul Salsabila Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "WatchAFL3-0706012110031-Nuzulul Salsabila Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		3A3579B129F2BF5E00510FE6 /* WatchAFL3_0706012110031_Nuzulul_SalsabilaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchAFL3_0706012110031_Nuzulul_SalsabilaApp.swift; sourceTree = "<group>"; };
 		3A3579B329F2BF5E00510FE6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		3A3579B529F2BF6000510FE6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3A3579B829F2BF6000510FE6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		3A3579C129F2C43400510FE6 /* hikeData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = hikeData.json; sourceTree = "<group>"; };
 		3A3F0B9529E8E637005719CD /* landmarkData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = landmarkData.json; sourceTree = "<group>"; };
 		3A3F0B9729E8E69E005719CD /* Landmark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Landmark.swift; sourceTree = "<group>"; };
 		3A3F0B9929E8E824005719CD /* ModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
@@ -140,7 +152,6 @@
 		3A3579B029F2BF5E00510FE6 /* WatchAFL3-0706012110031-Nuzulul Salsabila Watch App */ = {
 			isa = PBXGroup;
 			children = (
-				3A3579B129F2BF5E00510FE6 /* WatchAFL3_0706012110031_Nuzulul_SalsabilaApp.swift */,
 				3A3579B329F2BF5E00510FE6 /* ContentView.swift */,
 				3A3579B529F2BF6000510FE6 /* Assets.xcassets */,
 				3A3579B729F2BF6000510FE6 /* Preview Content */,
@@ -186,6 +197,7 @@
 			isa = PBXGroup;
 			children = (
 				3A3F0B9529E8E637005719CD /* landmarkData.json */,
+				3A3579C129F2C43400510FE6 /* hikeData.json */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -387,7 +399,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				3A3579B929F2BF6000510FE6 /* Preview Assets.xcassets in Resources */,
+				3A3579CA29F2C47900510FE6 /* landmarkData.json in Resources */,
+				3A3579C929F2C47900510FE6 /* Assets.xcassets in Resources */,
 				3A3579B629F2BF6000510FE6 /* Assets.xcassets in Resources */,
+				3A3579CB29F2C47900510FE6 /* hikeData.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -399,6 +414,7 @@
 				3A7D5CE829E4F19D0068DE1C /* Preview Assets.xcassets in Resources */,
 				3A7D5CE529E4F19D0068DE1C /* Assets.xcassets in Resources */,
 				3A3F0B9629E8E637005719CD /* landmarkData.json in Resources */,
+				3A3579C229F2C43400510FE6 /* hikeData.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -409,8 +425,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A3579C329F2C47900510FE6 /* Hike.swift in Sources */,
+				3A3579CC29F2C47900510FE6 /* MapView.swift in Sources */,
+				3A3579C529F2C47900510FE6 /* Profile.swift in Sources */,
 				3A3579B429F2BF5E00510FE6 /* ContentView.swift in Sources */,
-				3A3579B229F2BF5E00510FE6 /* WatchAFL3_0706012110031_Nuzulul_SalsabilaApp.swift in Sources */,
+				3A3579C429F2C47900510FE6 /* LandmarkRow.swift in Sources */,
+				3A3579C629F2C47900510FE6 /* Landmark.swift in Sources */,
+				3A3579CD29F2C47900510FE6 /* AFL3_0706012110031_NuzululSalsabilaApp.swift in Sources */,
+				3A3579C729F2C47900510FE6 /* CircleImage.swift in Sources */,
+				3A3579C829F2C47900510FE6 /* ModelData.swift in Sources */,
+				3A3579CE29F2C47900510FE6 /* LandmarkList.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
