@@ -16,5 +16,9 @@ struct AFL3_0706012110031_NuzululSalsabilaApp: App {
             ContentView()
                 .environmentObject(modelData)
         }
+        
+        #if os(watchOS)
+        WKNotificationScene(controller: NotificationController.self, category: "LandmarkNear")
+        #endif
     }
 }
