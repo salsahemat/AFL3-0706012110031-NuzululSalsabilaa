@@ -10,7 +10,7 @@ import SwiftUI
 //add stored property
 struct LandmarkRow: View {
     var landmark: Landmark
-
+    
     var body: some View {
         //show content in horizontal way
         HStack {
@@ -18,8 +18,16 @@ struct LandmarkRow: View {
             landmark.image
                 .resizable()
                 .frame(width: 50, height: 50)
-            Text(landmark.name) //use the landmark property's name
-            
+                .cornerRadius(5)
+            VStack(alignment: .leading) {
+                Text(landmark.name) //use the landmark property's name
+                    .bold()
+                #if !os(watchOS)
+                Text(landmark.park)
+                    .font(.caption)
+                    .foregroundColor(.secondary)
+                #endif
+            }
             Spacer()
             //test whether the current landmark is a favorite.
             if landmark.isFavorite {
@@ -27,6 +35,7 @@ struct LandmarkRow: View {
                     .foregroundColor(.yellow)
             }
         }
+        .padding(.vertical, 4)
     }
 }
 
