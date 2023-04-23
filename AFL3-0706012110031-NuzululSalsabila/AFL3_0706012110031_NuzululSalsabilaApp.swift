@@ -27,5 +27,12 @@ struct AFL3_0706012110031_NuzululSalsabilaApp: App {
         #if os(watchOS)
         WKNotificationScene(controller: NotificationController.self, category: "LandmarkNear")
         #endif
+        
+        //add the Settings scene
+        #if os(macOS)
+        Settings {
+            LandmarkSettings()
+        }
+        #endif
     }
 }

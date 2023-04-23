@@ -12,20 +12,42 @@ import MapKit
 struct MapView: View {
     //save coordinate geographis
     var coordinate: CLLocationCoordinate2D
-    @State private var region = MKCoordinateRegion()
+    
+    //takes on the medium zoom level by default
+    @AppStorage("MapView.zoom")
+    private var zoom: Zoom = .medium
+    
+    //characterize the zoom level
+    enum Zoom: String, CaseIterable, Identifiable {
+        case near = "Near"
+        case medium = "Medium"
+        case far = "Far"
+        
+        var id: Zoom {
+            return self
+        }
+    }
+    
+    //construct the region property to a value that depends on zoom
+    var delta: CLLocationDegrees {
+        switch zoom {
+        case .near: return 0.02
+        case .medium: return 0.2
+        case .far: return 2
+        }
+    }
+    
     var body: some View {
-        Map(coordinateRegion: $region) //reference to state private var region
-            .onAppear {
-                setRegion(coordinate)
-            }
+        //reference to state private var region
+        Map(coordinateRegion: .constant(region))
     }
     //method that updates the region based on a coordinate value
-    private func setRegion(_ coordinate: CLLocationCoordinate2D) {
-            region = MKCoordinateRegion(
-                center: coordinate,
-                span: MKCoordinateSpan(latitudeDelta: 0.2, longitudeDelta: 0.2)
-            )
-        }
+    var region: MKCoordinateRegion {
+        MKCoordinateRegion(
+            center: coordinate,
+            span: MKCoordinateSpan(latitudeDelta: delta, longitudeDelta: delta)
+        )
+    }
 }
 
 struct MapView_Previews: PreviewProvider {
