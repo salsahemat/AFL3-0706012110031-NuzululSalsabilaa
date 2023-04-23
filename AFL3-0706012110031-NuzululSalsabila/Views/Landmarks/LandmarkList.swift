@@ -14,6 +14,7 @@ struct LandmarkList: View {
     @State private var showFavoritesOnly = false
     //initiate filter state variable
     @State private var filter = FilterCategory.all
+    //state variable for the selected landmark
     @State private var selectedLandmark: Landmark?
     
     //describe filter states
@@ -49,11 +50,14 @@ struct LandmarkList: View {
     var body: some View {
         //navigation stack is the new navigation list
         NavigationStack{
-            List(modelData.landmarks) { landmark in
-                NavigationLink{
-                    LandmarkDetail(landmark: landmark)
-                }label:{
-                    LandmarkRow(landmark:landmark)
+            List(selection: $selectedLandmark) {
+                ForEach(filteredLandmarks) { landmark in
+                    NavigationLink{
+                        LandmarkDetail(landmark: landmark)
+                    }label:{
+                        LandmarkRow(landmark:landmark)
+                    }
+                    .tag(landmark)
                 }
             }
             .navigationTitle(title)
@@ -81,6 +85,7 @@ struct LandmarkList: View {
             }
             Text("Select a Landmark")
         }
+        .focusedValue(\.selectedLandmark, $modelData.landmarks[index ?? 0])
     }
 }
 
